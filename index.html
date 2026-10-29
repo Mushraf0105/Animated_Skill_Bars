@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Progress Bars</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <h1 class="hero-title">Technical Expertise & Skills</h1>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <section id="skills-section" class="skills-card" aria-label="Skills and Proficiencies">
+
+      <!-- Section Header -->
+      <div class="skills-header">
+        <div class="header-left">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-heading">My Technical Skills</h2>
+          <p class="section-subtext">Progress bars dynamically animate into view as you scroll.</p>
+        </div>
+        <div class="header-actions">
+          <button id="replay-btn" class="action-btn" title="Replay skill fill animations" aria-label="Replay animation">
+            <svg class="refresh-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
+            </svg>
+            <span>Replay Animation</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Skills List (6 items exceeding the 5 required) -->
+      <div class="skills-list" id="skills-list">
+
+        <!-- Skill 1: HTML5 -->
+        <article class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-wrap">
+              <span class="skill-icon html-icon" aria-hidden="true">&lt;/&gt;</span>
+              <span class="skill-label">HTML5 & Semantic Markup</span>
+            </div>
+            <div class="skill-stat">
+              <span class="skill-percentage" data-target="95">0%</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+            aria-label="HTML5 proficiency">
+            <div class="progress-fill html-fill" data-progress="95">
+              <div class="fill-shimmer"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skill 2: CSS3 -->
+        <article class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-wrap">
+              <span class="skill-icon css-icon" aria-hidden="true">#</span>
+              <span class="skill-label">CSS3 & Keyframe Animations</span>
+            </div>
+            <div class="skill-stat">
+              <span class="skill-percentage" data-target="90">0%</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+            aria-label="CSS3 proficiency">
+            <div class="progress-fill css-fill" data-progress="90">
+              <div class="fill-shimmer"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skill 3: JavaScript -->
+        <article class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-wrap">
+              <span class="skill-icon js-icon" aria-hidden="true">JS</span>
+              <span class="skill-label">JavaScript (ES6+ & DOM APIs)</span>
+            </div>
+            <div class="skill-stat">
+              <span class="skill-percentage" data-target="85">0%</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+            aria-label="JavaScript proficiency">
+            <div class="progress-fill js-fill" data-progress="85">
+              <div class="fill-shimmer"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skill 4: React.js -->
+        <article class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-wrap">
+              <span class="skill-icon react-icon" aria-hidden="true">⚛</span>
+              <span class="skill-label">React.js & Component Architecture</span>
+            </div>
+            <div class="skill-stat">
+              <span class="skill-percentage" data-target="80">0%</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+            aria-label="React proficiency">
+            <div class="progress-fill react-fill" data-progress="80">
+              <div class="fill-shimmer"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skill 5: Responsive Web Design -->
+        <article class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-wrap">
+              <span class="skill-icon responsive-icon" aria-hidden="true">📱</span>
+              <span class="skill-label">Responsive & Mobile-First Design</span>
+            </div>
+            <div class="skill-stat">
+              <span class="skill-percentage" data-target="92">0%</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Responsive Design proficiency">
+            <div class="progress-fill responsive-fill" data-progress="92">
+              <div class="fill-shimmer"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skill 6: Git & Version Control -->
+        <article class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-wrap">
+              <span class="skill-icon git-icon" aria-hidden="true">⌥</span>
+              <span class="skill-label">Git & GitHub Workflow</span>
+            </div>
+            <div class="skill-stat">
+              <span class="skill-percentage" data-target="78">0%</span>
+            </div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Git workflow proficiency">
+            <div class="progress-fill git-fill" data-progress="78">
+              <div class="fill-shimmer"></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Script inclusion -->
+  <script src="script.js"></script>
+</body>
+
+</html>
